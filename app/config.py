@@ -1,0 +1,26 @@
+import os
+from dotenv import load_dotenv
+
+
+load_dotenv()
+
+# SUNAT CREDENTIALS
+SUNAT_RUC = os.getenv("SUNAT_RUC")
+SUNAT_USER = os.getenv("SUNAT_USER")
+SUNAT_PASS = os.getenv("SUNAT_PASS")
+
+# KUSHKI CREDENTIALS
+CREATE_TOKEN_URL = os.getenv("TOKEN_URL")
+CREATE_SUBS_URI = os.getenv("SUBS_URL")
+PUBLIC_MERCHANT_ID = os.getenv("PUBLIC_ID")
+PRIVATE_MERCHANT_ID = os.getenv("PRIVATE_ID")
+
+# AWS CREDENTIALS
+AWS_ACCOUNT_ID = os.getenv("AWS_ACCOUNT_ID")
+AWS_BUCKET_NAME = os.getenv("AWS_BUCKET_NAME")
+
+# APPLICATION CREDENTIALS
+FLASK_ENV = os.getenv("FLASK_ENV")
+DATABASE_URI = os.getenv("DATABASE_URI")
+SEC_DATABASE_URI = os.getenv("SEC_DATABASE_URI")
+AUTH_PREFIX = 'Bearer'
